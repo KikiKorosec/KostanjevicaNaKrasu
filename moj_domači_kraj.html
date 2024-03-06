@@ -1,0 +1,225 @@
+<html>
+<head>
+<title> Moj domači kraj </title>
+</head>
+
+<body> 
+<h1> <font face="garamond" color="#660035" > <center style="background-color:#d0d0e1; height:10vh"> <br> KOSTANJEVICA NA KRASU </center> </font> </h1>
+
+<aside style="background-color:#af94b8; width:100%; height:20vh; display:flex; flex-direction:column; justify-content:center ">
+<p style="text-align:center"> <font face="garamond" size="4"> Kostanjevica na Krasu je kraška vas na Goriškem. Nastajalo je na strmem pobočju, ki se na severni strani vzpenja proti Fajtovem hribu na jugu in zahodu pa se znižuje. 
+<br> Naselje se je začelo razvijati že v prazgodovini. V času prve svetovne vojne je bilo naselje porušeno, v drugi svetovni vojni pa požgano, prebivalci pa so bili odpeljani v koncentracijska taborišča v Italiji. 
+<br> Število prebivalcev od druge svetovne vojne upada. Prebivalci vasi so zaposleni predvsem v bližnji Novi Gorici in v Mirnu, nekaj jih dela tudi v Italiji. 
+<br> Kostanjevica na Krasu je rodni kraj akademskega slikarja Jožeta Spacala in pisatelja Igorja Torkarja. </p>
+</font>
+</aside>
+<font face="garamond">
+<br>
+<main style="wihth:100%; display:flex; justify-content:space-between">
+<aside style="background-color:#726080; width:20%; height:80vh; display:flex; flex-direction:column; justify-content:space-evenly"> 
+<div style="width:60%; aspect-ratio: 1/1; background-color:#bfa6b3; border-radius:30%; margin:auto; display:flex; justify-content:center"> 
+<p style="text-align:center;"> POŽAR 2022 <br> 15.7.2022 je kraške planote Slovenije in Italije zajel požar, ki se je razplantel na kar 2000ha. <br> Požar so pogasili v 16 dneh, posledice pa so vidne še danes. </p> </div>
+<div style="width:60%; aspect-ratio: 1/1; background-color:#bfa6b3; border-radius: 30%; margin:auto; display:flex; justify-content:center"> 
+<p style="text-align:center;"> Pomnik miru, <br> postavljen v spomin vsem braniteljem slovenske zemlje. <br> Tako zgodovinska kot tudi arhitekturna umetnost turiste pa navdušuje s prečudovitimi razgledi. </p> </div>
+<div style="width:60%; aspect-ratio: 1/1; background-color:#bfa6b3; border-radius: 30%; margin:auto; display:flex; justify-content:center"> 
+<p style="text-align:center;"> Kržada, kot ji pravijo domačini, <br> je trg, kjer se odvijajo različni dogodki. <br> V zimskih časih pa obratuje brunarica, ki ponuja čaj in kuhano vino.  </p> </div>
+</aside>
+
+<aside style="width:55%; background-color:#8c7e91">
+<br>
+<br>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+  
+  <script type="text/javascript"									
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMn5A21MoEHdwLvJy1PnoemPIuDRP84Lg&sensor=false">
+   </script>
+
+    <script type="text/javascript">
+      function initialize() {
+        var polozaj1 = new google.maps.LatLng(45.845307, 13.642330);
+        var polozaj2 = new google.maps.LatLng(45.845875, 13.638990);
+		var polozaj3 = new google.maps.LatLng(45.844082, 13.641790);
+		var polozaj4 = new google.maps.LatLng(45.838541, 13.640616);
+		var polozaj5 = new google.maps.LatLng(45.843129, 13.643323);
+		var polozaj6 = new google.maps.LatLng(45.845105, 13.643360);
+		
+        var mapOptions = {
+  	center: new google.maps.LatLng(45.8448, 13.6420),
+  	zoom: 15,
+  	panControl: false,
+	zoomControl: true,
+	zoomControlOptions: {
+	  style: google.maps.ZoomControlStyle.SMALL
+	},
+	scaleControl: false,
+  	mapTypeId: google.maps.MapTypeId.ROADMAP,
+  	mapTypeControlOptions: {
+ 	  style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+  	},
+        };
+		
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+
+		var ikona1 = new google.maps.MarkerImage("https://maps.google.com/mapfiles/kml/shapes/firedept.png",
+		null, null, null,
+		new google.maps.Size(45, 45));
+		
+		var ikona3 = new google.maps.MarkerImage("https://maps.google.com/mapfiles/kml/paddle/pink-stars.png",
+		null, null, null,
+		new google.maps.Size(40, 40));
+		
+		var ikona2 = new google.maps.MarkerImage("https://maps.google.com/mapfiles/kml/shapes/hiker.png",
+		null, null, null,
+		new google.maps.Size(30, 30))
+		
+        var Oznaka1 = new google.maps.Marker({
+	position: polozaj1,
+	map: map,
+	icon: ikona1,	
+	title: 'Gasilski štab v času požara 2022'
+	
+        });
+
+        var Oznaka2 = new google.maps.Marker({
+	position: polozaj2,
+	map: map,
+	icon:ikona2,
+	title: 'Peš pot na Cerje'
+        });
+		
+		var Oznaka3 = new google.maps.Marker({
+	position: polozaj3,
+	map: map,
+	icon:ikona3,
+	title: 'Kržada'
+        });
+		
+		var Oznaka4 = new google.maps.Marker({
+	position: polozaj4,
+	map: map,
+	icon:'https://maps.google.com/mapfiles/kml/pal2/icon10.png',
+	title: 'Lovska koča lovske družine Trstelj'
+        });
+		var Oznaka5 = new google.maps.Marker({
+	position: polozaj5,
+	map: map,
+	icon:'https://maps.google.com/mapfiles/kml/pal3/icon44.png',
+	title: 'Kulturni dom'
+        });
+		var Oznaka6 = new google.maps.Marker({
+	position: polozaj6,
+	map: map,
+	icon:'https://maps.google.com/mapfiles/kml/pal2/icon3.png',
+	title: 'Ex Ossario italiano-Vojaško pokopališče'
+        });
+		
+
+
+
+        var infookno1 = new google.maps.InfoWindow({
+    	content: 'Gasilski štab v času požara 2022.<BR/><BR/><a href="https://sl.wikipedia.org/wiki/Po%C5%BEar_na_Krasu_(2022)">Informacije o požaru</a>. <BR> <img src="https://static.primorske.si/foto/highres/gnweb/833353_166-kostanjevica.jpg"; width="300"> '
+	});
+	
+	var infookno2 = new google.maps.InfoWindow({
+    	content: 'Pomnik miru Cerje z okrepčevalnico.<BR/><BR/><a href="https://www.mirenkras.si/okrepcevalnica-cerje">Okrepčevalnica Cerje</a>. <BR> <img src="https://www.visitkras.info/upload/gallery/11/pomnik-miru-cerje.jpg"; width="300"> '
+	});
+	
+		var infookno3 = new google.maps.InfoWindow({
+    	content: 'Kržada. <BR/><BR/><a href="https://www.facebook.com/KostanjevicaKras">Informacije o dogajanju na vasi</a>. <BR> <img src="https://img.mojaobcina.si/img/1/H_MAX_1024x768/2101_1708083520_img_20240210_094523.jpg"; width="300">'
+	});
+	
+		var infookno4 = new google.maps.InfoWindow({
+    	content: 'Koča lovskege družine Trstelj. <BR> Možnost najema za rojstne dneve ali prireditve <BR> Naslov: Kostanjevica na Krasu 31D <BR> Kontakt: Jelko Lapajne <BR/> <img src="https://img.mojaobcina.si/img/1/H_MAX_1024x768/slikezapredstavitev.jpg"; width="300"> '
+	});
+	
+		var infookno5 = new google.maps.InfoWindow({
+    	content: 'Kulturni dom z raznimi storitvenimi dejavnostmi in prostorom za prireditve.<br> V stavbi kulturnega doma se nahajata manjša trgovina in pošta. <BR><BR/> <img src="MOJA SLIKA"; width="300"> '
+	});
+	
+		var infookno6 = new google.maps.InfoWindow({
+    	content: 'Ex Ossario italiano-Vojaško pokopališče.<BR> Župnija s pokopališčem.<BR> <img src="https://i0.wp.com/www.travel-slovenia.si/wp-content/uploads/2020/01/travel-slovenia-italian-ossuary-kostanjevica-na-krasu.jpg?resize=300%2C225&ssl=1"; width="300"> '
+	});
+	
+
+	
+	
+
+        google.maps.event.addListener(Oznaka2, 'click', function() {
+  	infookno2.open(map,Oznaka2);
+	});
+        google.maps.event.addListener(Oznaka1, 'click', function() {
+  	infookno1.open(map,Oznaka1);
+	});
+	
+	google.maps.event.addListener(Oznaka3, 'click', function() {
+  	infookno3.open(map,Oznaka3);
+	});
+	
+	google.maps.event.addListener(Oznaka4, 'click', function() {
+  	infookno4.open(map,Oznaka4);
+	});
+	google.maps.event.addListener(Oznaka5, 'click', function() {
+  	infookno5.open(map,Oznaka5);
+	});
+	google.maps.event.addListener(Oznaka6, 'click', function() {
+  	infookno6.open(map,Oznaka6);
+	});
+      }
+
+
+    </script>
+  </head>
+
+  <body onload="initialize()">
+  <center>
+        <div id="map_canvas" style="width:90%; height:600px"></div>
+	</center>
+  </body>
+</aside>
+
+<aside style="width:20%; hight:80vh; background-color:#726080; display:flex; flex-direction:column; justify-content:space-evenly">
+<div style="width:60%; aspect-ratio: 1/1; background-color:#bfa6b3; border-radius: 30%; margin:auto; display:flex; justify-content:center"> 
+<p style="text-align:center;"> LD Trstelj <br> je dobilo ime po bližnjem hribu Trstelj. <br> Koča lahko gosti do 100 gostev. Namenjena je raznim praznovanjem ter drugim potrebam lovske družine <br>  </p> </div>
+<div style="width:60%; aspect-ratio: 1/1; background-color:#bfa6b3; border-radius: 30%; margin:auto; display:flex; justify-content:center"> 
+<p style="text-align:center;">  Prek kratkim prenovljen kulturni dom, je namenjen druženju. <br> V prostorih se odvijajo razni dogodki in prireditve. <br> V stavbi kulturnega doma se nahaja tudi pošta in Mlinotest. 
+<br> <a href="https://www.mlinotest.si/izdelek/trgovina-kostanjevica-na-krasu/">Urnik trgovine</a> </p> </div>
+<div style="width:60%; aspect-ratio: 1/1; background-color:#bfa6b3; border-radius: 30%; margin:auto; display:flex; justify-content:center"> 
+<p style="text-align:center;">  Ob pokopališču stoji spomenik Italijanskim padlim vojakom iz druge svetovne vojne. <br> Nekoč je tukaj stalo vojaško pokopališče, danes v parku pred pokopališčem stoji v spomin spomenik. </p> </div>
+</aside>
+
+</main>
+
+<br>
+
+<aside style="background-color:#af94b8; width:100%; height:30vh; display:flex; flex-direction:column; justify-content:center; text-align:center;">
+<h3 style="margin:0; padding:0"> Fotografije </h3>
+<p style="display:flex; flex-direction:rows; justify-content:space-evenly"> 
+<iframe  width="300" height="200" src="https://www.youtube.com/embed/mG3yS5iuj18?si=rlbuoE3twN-ws6k-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<img src="https://travelaroundslovenia.files.wordpress.com/2020/01/travel-slovenia-kostanjevica-vojscica-stanjel-komen-trip-1.jpg"; height="200">
+<img src="https://mapio.net/images-p/99883506.jpg"; height="200">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kostanjevica_na_Krasu_spomenik.jpg/1200px-Kostanjevica_na_Krasu_spomenik.jpg?20230423120748"; height="200">
+<img src="https://www.pgd-ivanjeselo.si/wp-content/uploads/2022/08/IMG-1e063916030f3971fd844a6a309278f8-V.jpg"; height="200">
+
+
+</p>
+</aside>
+</body>
+<br>
+<footer>
+<center style="background-color:#d0d0e1; position:sticky; bottom:0; width:100%; height:3vh"> Kristina Korošec 1.PN, mentor: Klemen Kozmus Trajkovski, predmet: Kartografija, Šolsko leto 2023/24,  </center>
+
+</footer>
+</font>
+
+</html>
+
+<!--w3schools-->
